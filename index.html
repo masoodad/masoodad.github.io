@@ -1,63 +1,329 @@
 <!DOCTYPE html>
-<html>
-<style>
-body, html {
-  height: 100%;
-  margin: 0;
-}
+<html lang="en">
 
-.bgimg {
-  background-image: url('bg.jpg');
-  height: 100%;
-  background-position: center;
-  background-size: cover;
-  position: relative;
-  color: white;
-  font-family: "Courier New", Courier, monospace;
-  font-size: 25px;
-}
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-.topleft {
-  position: absolute;
-  top: 0;
-  left: 16px;
-}
+  <title>Home Page</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
 
-.bottomleft {
-  position: absolute;
-  bottom: 0;
-  left: 16px;
-}
+  <!-- Favicons -->
+  <link href="assets/img/icon.png" rel="icon">
 
-.middle {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i|Playfair+Display:400,400i,500,500i,600,600i,700,700i,900,900i" rel="stylesheet">
 
-hr {
-  margin: auto;
-  width: 40%;
-}
-</style>
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
 <body>
 
-<div class="bgimg">
-  <div class="topleft">
-    <p>Logo</p>
-  </div>
-  <div class="middle">
-    <h1>COMING SOON</h1>
-    <hr>
-    <p>Will back soon!</p>
-  </div>
-  <div class="bottomleft">
-    <p>Masood Ahmad is Updating Portfolio!</p>
-  </div>
-</div>
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <a href="index.html" target="_blank" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link  scrollto" href="#portfolio">Portfolio</a></li>
+          <li><a class="nav-link  scrollto" href="#journal">Publications</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <div id="hero" class="home">
+
+    <div class="container">
+      <div class="hero-content">
+        <h1>I'm <span class="typed" data-typed-items="Masood Ahmad, Computer Science Engineer, Robotics Student, Animator"></span></h1>
+        <p>Developer, Robotist, Programmer, Animator</p>
+
+        <ul class="list-unstyled list-social">
+          <li><a href="https://scholar.google.com/citations?user=VwlM9FcAAAAJ&hl=en" target="_blank"><img src="assets/img/scholar.png"></a></li>
+          <li><a href="https://www.instagram.com/masoodmx/"  target="_blank"><img src="assets/img/instagram.png"></i></a></li>
+          <li><a href="https://github.com/masoodad"  target="_blank"><img src="assets/img/github.png"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/masood-ahmad-661029172/" target="_blank"><img src="assets/img/linkedin.png"></i></a></li>
+          <li><a href="https://www.facebook.com/profile.php?id=100018404322540" target="_blank"><img src="assets/img/fb.png"></a></li>
+        </ul>
+      </div>
+    </div>
+  </div><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <div id="about" class="paddsection">
+      <div class="container">
+        <div class="row justify-content-between">
+
+          <div class="col-lg-4 ">
+            <div class="div-img-bg">
+              <div class="about-img">
+                <img src="assets/img/me.png" class="img-responsive" alt="me">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-7">
+            <div class="about-descr">
+              <h2>About Me</h2>
+              <p class="p-heading">
+                Research Interest - Autonomous Aerial Vehicles, Computer Vision, optmization & Neural Network.
+              </p>
+              <p class="separator">
+                I am pursuing a master of science in robotics and automatic control system at Warsaw University of Technology, Poland.
+                I have completed computer science and engineering with a strong interest in robotics and machine learning. 
+              </p>
+              <br>
+              <h4><b>Email:</b> masoodmx@gmail.com, masood.ahmad.stud@pw.edu.pl</h4>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div><!-- End About Section -->
+
+    <!-- ======= Services Section ======= -->
+    <div id="services">
+      <div class="container">
+
+        <div class="services-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="services-block">
+                <img src="assets/img/mani.png">
+                <span>Manipulator Design</span>
+                <p class="separator"> Developed Dynamics & Contorl of UR5, ABB IRB7600 Manipulator, 6-DOF Serial Manipulator</p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="services-block">
+                <img src="assets/img/research.png">
+                <span>Research Collaboration</span>
+                <p class="separator">To an English person, it will seem like simplified English,told me what </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="services-block">
+                <img src="assets/img/coding.png">
+                <span>WEB DESIGN</span>
+                <p class="separator">Designed more 3+ websites. HTML, CSS, Boothstap, Js, PHP</p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="services-block">
+                <img src="assets/img/animation.png">
+                <span>Animation</span>
+                <p class="separator">To an English person, it will seem like simplified English,told me what </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="services-block">
+                <img src="assets/img/analysis.png">
+                <span>Data Analytics</span>
+                <p class="separator">To an English person, it will seem like simplified English,told me what </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </div><!-- End Services Section -->
+
+
+     <!-- ======= Journal Section ======= -->
+     <div id="journal" class="text-left paddsection">
+
+      <div class="container">
+        <div class="section-title text-center">
+          <h2>journal</h2>
+        </div>
+      </div>
+
+      <div class="container">
+        <ul style="list-style: square; font-size: larger; color: black;">
+          <li>Ahmad, M.; Kumar, N.; Kumari, R. A Hybrid Genetic Algorithm Approach to Solve Inverse Kinematics of A Mechanical 
+          Manipulator. Int. J. Sci. Technol. Res. 2019,8, 1777–1782 (2019).</li>
+          <li>Narender Kumar, Masood Ahmad, "Survey of Different Trajectory Planning Techniques of Mechanical Manipulator", 
+            IJRECE VOL. 6 Issue 4 ( October-December 2018) ISSN: 2393-9028 (Print) | ISSN: 2348-2281 (ONLINE).</li>
+        </ul>
+      </div>
+
+    </div><!-- End Journal Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <div id="portfolio" class="paddsection">
+
+      <div class="container">
+        <div class="section-title text-center">
+          <h2>Web Design Project</h2>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row portfolio-container">
+    
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <a href="https://vcc-gnd-challenge.herokuapp.com/" target="_blank">
+            <img src="assets/img/web2.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Computer Vision Game</h4>
+            </div>
+            </a>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <a href="https://ufqtube.herokuapp.com/" target="_blank">
+            <img src="assets/img/web1.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Animation Project</h4>
+            </div>
+            </a>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <a href="https://ufqtube.herokuapp.com/" target="_blank">
+            <img src="assets/img/web3.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>A* Algorithm</h4>
+            </div>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div><!-- End Portfolio Section -->
+
+   
+
+    <!-- ======= Contact Section ======= -->
+    <div id="contact" class="paddsection">
+      <div class="container">
+        <div class="contact-block1">
+          <div class="row">
+
+            <div class="col-lg-6">
+              <div class="contact-contact">
+
+                <h2 class="mb-30">Contact me!</h2>
+
+                <ul class="contact-details">
+                  <li><span>Warsaw University of Technology, Automatic and Control</span></li>
+                  <li><span>Warsaw, Poland</span></li>
+                  <li><span>masoodmx@gmail.com</span></li>
+                  <li><span>masood.ahmad.stud@pw.edu.pl</span></li>
+                </ul>
+
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                <div class="row gy-3">
+
+                  <div class="col-lg-6">
+                    <div class="form-group contact-block1">
+                      <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-6">
+                    <div class="form-group">
+                      <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-12">
+                    <div class="form-group">
+                      <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-12">
+                    <div class="form-group">
+                      <textarea class="form-control" name="message" placeholder="Message" required></textarea>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-12">
+                    <div class="loading">Loading</div>
+                    <div class="error-message"></div>
+                    <div class="sent-message">Your message has been sent. Thank you!</div>
+                  </div>
+
+                  <div class="mt-0">
+                    <input type="submit" class="btn btn-defeault btn-send" value="Send message">
+                  </div>
+
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <div id="footer" class="text-center">
+    <div class="container">
+      <div class="socials-media text-center">
+
+        <ul class="list-unstyled">
+          <li><a href="https://www.facebook.com/profile.php?id=100018404322540"><i class="bi bi-facebook"></i></a></li>
+          <li><a href="#"><i class="bi bi-twitter"></i></a></li>
+          <li><a href="https://www.instagram.com/masoodmx/"><i class="bi bi-instagram"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/masood-ahmad-661029172/"><i class="bi bi-linkedin"></i></a></li>
+        </ul>
+
+      </div>
+    </div>
+  </div><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
 
 </body>
-</html>
 
+</html>
